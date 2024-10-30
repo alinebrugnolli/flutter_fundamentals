@@ -35,6 +35,12 @@ class _HomePageStateFullState extends State<HomePageStatefull> {
   }
 
   @override
+  void didChangeDependencies() {
+    print('didChangeDependencies');
+    super.didChangeDependencies();
+  }
+
+  @override
   Widget build(BuildContext context) {
     print('Building the StatefulWidget');
     return Scaffold(
